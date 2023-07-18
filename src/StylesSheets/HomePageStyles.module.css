@@ -68,22 +68,20 @@
 }
 
 .fundoPerso{
-    background: url(../utilizaveis/bghome.png);
+    background: url(../utilizaveis/bghome.png), url(../utilizaveis/bg2.png);
     height: 100%;
     background-size: cover;
     background-position: bottom;
     background-repeat: no-repeat;
+
 }
 .segundoSection{
-    background: url(../utilizaveis/bgsectitonone.png);
+    background: url(../utilizaveis/bgsectitonone.png), url(../utilizaveis/bg2.png);
     height: 100vh;
     background-position: top;
     background-size: cover;
-
-
-
-
 }
+
 .hr{
     display: none;
     height: 3px;

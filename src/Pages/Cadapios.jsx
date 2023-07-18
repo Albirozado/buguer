@@ -9,7 +9,7 @@ import FavoriteIcon from '@mui/icons-material/Favorite';
 
 export default function Cardapios(){
     return(
-        <>
+        <section className={styles.segundoSectionPrinci}>
             <section className = {styles.segundoSection}>
                 <section className={styles.cardapioPrincpipalContainer}>
                     <h1 className={styles.maisPedidos}> mais pedidos</h1>
@@ -65,6 +65,6 @@ export default function Cardapios(){
                 </section>
             </section>
         
-        </>
+        </section>
     )
 }

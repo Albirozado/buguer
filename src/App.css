@@ -50,8 +50,13 @@ table {
 body{
     color: #ffffff;
     font-family: 'Poppins', sans-serif;
+	background: url(./utilizaveis/bg2.png);
+	background-position: bottom;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
 	background-color: #282828;
-
+	overflow-x: hidden;
 
 }
 .linkado{

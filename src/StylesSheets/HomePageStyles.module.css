@@ -68,7 +68,7 @@
 }
 
 .fundoPerso{
-    background: url(../utilizaveis/bghome.png), url(../utilizaveis/bg2.png);
+    background: url(../utilizaveis/bghome.png);
     height: 100%;
     background-size: cover;
     background-position: bottom;
@@ -76,7 +76,7 @@
 
 }
 .segundoSection{
-    background: url(../utilizaveis/bgsectitonone.png), url(../utilizaveis/bg2.png);
+    background: url(../utilizaveis/bgsectitonone.png);
     height: 100vh;
     background-position: top;
     background-size: cover;

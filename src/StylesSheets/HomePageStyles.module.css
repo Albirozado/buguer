@@ -1,3 +1,4 @@
+
 .sectionHome{
     width: 1180px;
     margin: 0 auto;
@@ -75,7 +76,7 @@
 }
 .segundoSection{
     background: url(../utilizaveis/bgsectitonone.png);
-    height: 50vh;
+    height: 100vh;
     background-position: top;
     background-size: cover;
 

@@ -49,7 +49,7 @@ export default function HomeFoGood(){
         
       })
     return(
-        <>
+        <section className={styles.homeMao}>
             <section className={styles.fundoPerso}>
                 <section className={styles.sectionHome}>
                     <div className={styles.contenteHome}>
@@ -81,7 +81,7 @@ export default function HomeFoGood(){
             <Suspense fallback={<div style={{ fontSize: "3rem" }}>Loading...</div>}>
                 <Cardapio />
               </Suspense>
-            </>
+            </section>
 
 
     )

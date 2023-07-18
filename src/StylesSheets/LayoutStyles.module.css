@@ -234,8 +234,12 @@ textarea:focus {
     
 }
 .contente{
-    margin: 3rem auto;
+    margin: 1rem auto;
 }
+.contente:first-child{
+    margin-top: 4rem;
+}
+
 .btnPost{
     font-weight: 900;
     font-size: 1rem;
@@ -253,7 +257,7 @@ textarea:focus {
 
 
 
-@media (max-width:600px){
+@media (max-width:750px){
     .logoWord{
         font-size: 1.1rem;
     }
@@ -262,6 +266,11 @@ textarea:focus {
     }
     .contente{
         margin: 1rem 5%;
+    }
+
+
+    .contente:first-child{
+        margin-top: 4rem;
     }
 
 

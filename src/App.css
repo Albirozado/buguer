@@ -48,7 +48,6 @@ table {
 	border-spacing: 0;
 }
 body{
-    line-height: 1;
     color: #ffffff;
     font-family: 'Poppins', sans-serif;
 	background: url(./utilizaveis/bg2.png);
@@ -58,6 +57,7 @@ body{
 	background-repeat: no-repeat;
 	background-attachment: fixed;
 	background-color: #282828;
+	overflow-x: hidden;
 
 }
 .linkado{

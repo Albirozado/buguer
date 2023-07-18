@@ -1,0 +1,212 @@
+.sectionHome{
+    width: 1180px;
+    margin: 0 auto;
+    max-width: 100%;
+    height: 100vh;
+
+
+}
+.contenteHome{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+    top: 40%;
+    -ms-transform: translateY(-40%);
+    transform: translateY(-40%);
+}
+.texto{
+    flex: 1 1 30rem;
+}
+.imagem{
+    flex: 1 1 30rem;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+
+.texto h1{
+    font-size: 2.5rem;
+    font-family: 'Josefin Sans', sans-serif;
+    color: #ccc;
+    font-weight: 800;
+    line-height: 2.8rem;
+}
+.texto p{
+    color: #ccc;
+    line-height: 1.4rem;
+    margin: 0.5rem 0;
+}
+
+.btnPost{
+    font-weight: 900;
+    font-size: 1rem;
+    text-transform: capitalize;
+    color: #fff;
+
+}
+.melhores{
+    color: #FD7E05;
+}
+.btnHome{
+    margin-top: 0.5rem;
+}
+.HomeDescri{
+    width: 30rem;
+    max-width: 100%;
+}
+
+.fast{
+    text-transform: uppercase;
+    font-size: 2rem;
+    color: #FD7E05;
+}
+
+.fundoPerso{
+    background: url(../utilizaveis/bghome.png);
+    height: 100%;
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+}
+.segundoSection{
+    background: url(../utilizaveis/bgsectitonone.png);
+    height: 50vh;
+    background-position: top;
+    background-size: cover;
+
+
+
+
+}
+.hr{
+    display: none;
+    height: 3px;
+    width: 7rem;
+    max-width: 100%;
+    border-radius: 1rem;
+    background-color: #FD7E05;
+    
+
+}
+
+.cardapioPrincpipalContainer{
+    width: 1280px;
+    margin: 0 auto;
+    max-width: 100%;
+}
+.cardapioPrincpipalContainer img{
+    width: 20rem;
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+.maisPedidos{
+    text-align: center;
+    color: #ccc;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 1.8rem;
+    font-family: 'Josefin Sans', sans-serif;
+
+}
+.cardapioContainer{
+    padding: 1rem 5%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 3fr));
+    gap: 1.5rem;
+
+}
+.boxCardapio{
+    background: rgba(230, 223, 221, 0);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(3.2px);
+    -webkit-backdrop-filter: blur(3.2px);
+    border: 1px solid rgba(230, 223, 221, 0.20);    
+    padding: 1rem;
+    position: relative;
+    
+}
+.boxCardapio label{
+    font-size: 0.9rem;
+    display: inline-block;
+    margin-top: 0.5rem;
+    color: #FD7E05;
+    font-weight: 500;
+    text-decoration: underline;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+.cardapioContainer h1{
+    text-transform: capitalize;
+    color: #ccc;
+    font-weight: 600;
+    font-size: 1.1rem;
+
+}
+.tituloPreco{
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 0 0.8rem;
+    align-items: center;
+}
+.tituloPreco span{
+    font-weight: 700;
+    font-size: 1.1rem;
+}
+.cardapioContainer p{
+    line-height: 1.2rem;
+    font-size: 0.9rem;
+    color: #ccc;
+
+    
+}
+.iconPedidos{
+    position: absolute;
+    top: 0.5rem;
+    right: 0.8rem;
+    color: #e44847;
+}
+
+
+@media (max-width:944px){
+    .HomeDescri{
+        width: 100%;
+        max-width: 100%;
+    }
+    .texto{
+        padding: 0.5rem 1.5rem;
+    }
+    .btnHome{
+        display: flex;
+        justify-content: center;
+    }
+    .texto h1{
+        font-size: 1.6rem;
+        text-align: center;
+        margin-bottom: 0.2rem;
+        line-height: 1.8rem;
+
+
+    }
+    .texto p{
+        line-height: 1.4rem;
+        font-size: 0.95rem;
+        margin: 0;
+    }
+    .contenteHome{
+        padding-top: 3rem;
+    }
+    
+    .fast{
+        font-size: 1.5rem;
+    }
+    .hr{
+        display: block;
+    }
+}

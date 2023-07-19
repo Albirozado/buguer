@@ -59,6 +59,27 @@ body{
 	overflow-x: hidden;
 
 }
+
+.loader {
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	border: 3px solid #FD7E05;
+	border-top-color: transparent;
+	animation: rot1 1.2s linear infinite;
+  }
+  .loaderContent{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+  }
+  
+  @keyframes rot1 {
+	to {
+	  transform: rotate(360deg);
+	}
+  }
 .linkado{
     color: #ffffff;
 

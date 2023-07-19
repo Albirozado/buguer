@@ -5,9 +5,7 @@ import {capitalize, createTheme, ThemeProvider } from '@mui/material';
 import imagemGirl from "../utilizaveis/woman-g.png"
 import ScrollReveal from 'scrollreveal'
 import { useNavigate } from 'react-router-dom';
-
-const Cardapio = lazy(() => import("./Cadapios"));
-
+import Cardapios from './Cadapios';
 
 
 
@@ -79,9 +77,7 @@ export default function HomeFoGood(){
                 
                 </section>
             </section>
-            <Suspense fallback={<div style={{ fontSize: "3rem" }}>Loading...</div>}>
-                <Cardapio />
-              </Suspense>
+            <Cardapios/>
             </section>
 
 

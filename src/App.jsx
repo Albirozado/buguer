@@ -20,7 +20,11 @@ function App() {
         <Routes>
           <Route element={<LayoutBasico />}>
             <Route index element={
-              <Suspense fallback={<div style={{ fontSize: "3rem" }}>Loading...</div>}>
+              <Suspense fallback={
+                <div className="loaderContent">
+                  <div className="loader"></div>
+                </div>
+              }>
                 <HomeFoGood />
               </Suspense>}
             />
@@ -30,7 +34,11 @@ function App() {
           </Route>
           <Route path='/admin' element={<AdmminLayout />}>
             <Route index element={
-              <Suspense fallback={<div style={{ fontSize: "3rem" }}>Loading...</div>}>
+              <Suspense fallback={
+                <div className="loaderContent">
+                  <div className="loader"></div>
+                </div>
+              }>
               <Home />
               </Suspense>
             

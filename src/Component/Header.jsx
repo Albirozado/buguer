@@ -61,6 +61,13 @@ export default function Header(){
 
 
       >Cardapio</NavLink>
+      
+      <NavLink to="/admin" className={styles.link}
+      style={({isActive})=> isActive ? style : null}
+      onClick={CellLular}
+
+
+      >Admin</NavLink>
 
      </div>
   <div className="open" onClick={handleOpenClick}>

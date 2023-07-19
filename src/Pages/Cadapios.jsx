@@ -4,10 +4,14 @@ import bguerOne from "../utilizaveis/BuguerOne.png"
 import bguerThree from "../utilizaveis/BuguerThree.png"
 import bguerFo from "../utilizaveis/Buguerfo.png"
 import FavoriteIcon from '@mui/icons-material/Favorite';
+import { useNavigate } from 'react-router-dom';
+
 
 
 
 export default function Cardapios(){
+    const navigate  = useNavigate()
+
     return(
         <section className={styles.segundoSectionPrinci}>
             <section className = {styles.segundoSection}>
@@ -24,7 +28,7 @@ export default function Cardapios(){
                                 <span>$100</span>
                                 </div>
                                 <p>Nullam convallis metus at justo iaculis, sit amet gravida velit scelerisque. Mauris vel ligula feugiat.</p>
-                                <label>pedir agora</label>
+                                <label onClick={()=>navigate(`/cardapio`)}>pedir agora</label>
                             </div>
                             <FavoriteIcon className={styles.iconPedidos}/>
                             
@@ -40,7 +44,7 @@ export default function Cardapios(){
                                 <span>$150</span>
                                 </div>
                                 <p>Nullam convallis metus at justo iaculis, sit amet gravida velit scelerisque. Mauris vel ligula feugiat.</p>
-                                <label>pedir agora</label>
+                                <label onClick={()=>navigate(`/cardapio`)}>pedir agora</label>
 
                             </div>
                             <FavoriteIcon className={styles.iconPedidos}/>
@@ -56,7 +60,7 @@ export default function Cardapios(){
                                 <span>$200</span>
                                 </div>
                                 <p>Nullam convallis metus at justo iaculis, sit amet gravida velit scelerisque. Mauris vel ligula feugiat.</p>
-                                <label>pedir agora</label>
+                                <label onClick={()=>navigate(`/cardapio`)}>pedir agora</label>
 
                             </div>
                             <FavoriteIcon className={styles.iconPedidos}/>

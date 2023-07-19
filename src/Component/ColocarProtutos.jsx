@@ -3,6 +3,7 @@ import { Progress } from 'antd';
 import AddPhotoAlternateOutlinedIcon from '@mui/icons-material/AddPhotoAlternateOutlined';
 import styles from "../StylesSheets/LayoutStyles.module.css"
 import MostrarPreview from './MostrarPreview';
+import { Link } from 'react-router-dom';
 
 import {capitalize, colors, createTheme, ThemeProvider } from '@mui/material';
 import Button from '@mui/material/Button';
@@ -100,7 +101,11 @@ const ColocarProduto = ({ produtoNome, setProdutoNome, sendProduto, uploadPostIm
       </div>
         <div>
           <MostrarPreview />
+          <div style={{display:'flex', justifyContent: "center"}}>
+          <Link to="/admin/previewadmin" className={styles.VerTudo}>ver todos</Link>
         </div>
+        </div>
+
 
 
 

@@ -5,6 +5,7 @@ import {capitalize, createTheme, ThemeProvider } from '@mui/material';
 import imagemGirl from "../utilizaveis/woman-g.png"
 import ScrollReveal from 'scrollreveal'
 import { useNavigate } from 'react-router-dom';
+
 const Cardapio = lazy(() => import("./Cadapios"));
 
 
@@ -60,7 +61,7 @@ export default function HomeFoGood(){
                             </div>
                             <div className={styles.btnHome}>
                             <ThemeProvider theme={theme}>
-                            <Button variant="outlined"  size="small" onClick={()=>navigate(`#cardapio`)}  color='primary' sx = {{bgcolor: "#e44847"}} >
+                            <Button variant="outlined"  size="small" onClick={()=>navigate(`/cardapio`)}  color='primary' sx = {{bgcolor: "#e44847"}} >
                                 <span className={styles.btnPost}>
                                 Cardapio
                                 </span>

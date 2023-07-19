@@ -63,7 +63,12 @@ export default function NavAdmin() {
           onClick={CellLular}
 
 
-         >Pedido</NavLink>      
+         >Pedido</NavLink>  
+          <NavLink to="/" className={styles.link}
+          onClick={CellLular}
+
+
+         >Home</NavLink>    
          </div>
       <div className="open" onClick={handleOpenClick}>
         <MenuIcon style={{ fontSize: 28 }} className="iconMenu"/ >

@@ -61,6 +61,7 @@ export default function MostrarPreview() {
           }}
           key={post.id}
           className={styles.contente}
+          style={{marginTop: "1rem"}}
         >
           <Grid container spacing={2} justify="center"  alignItems="center" columns={{ xs: 1, sm: 12, md: 12 }}>
             <Grid item md={5} container maxWidth="100%" direction="column">
@@ -91,9 +92,7 @@ export default function MostrarPreview() {
             </Grid>
           </Grid>
         </Paper>
-        <div style={{display:'flex', justifyContent: "center"}}>
-          <Link to="/admin/previewadmin" className={styles.VerTudo}>ver todos</Link>
-        </div>
+
         </div>
 
           

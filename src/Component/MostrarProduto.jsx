@@ -52,12 +52,13 @@ export default function MostrarProduto() {
         boxShadow: 0,
         display: "block",
         bgcolor: "transparent",
-        border: "solid 1px grey"
+        border: "solid 1px grey",
 
 
       }}
       key={post.id}
       className={styles.contente}
+      style={{marginTop: "1rem"}}
     >
       <Grid container spacing={2} justify="center"  alignItems="center" columns={{ xs: 1, sm: 12, md: 12 }}>
         <Grid item md={5} container maxWidth="100%" direction="column">

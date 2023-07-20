@@ -1,24 +1,36 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import styles from "../StylesSheets/HomePageStyles.module.css"
 import bguerOne from "../utilizaveis/BuguerOne.png"
 import bguerThree from "../utilizaveis/BuguerThree.png"
 import bguerFo from "../utilizaveis/Buguerfo.png"
 import FavoriteIcon from '@mui/icons-material/Favorite';
 import { useNavigate } from 'react-router-dom';
+import ScrollReveal from 'scrollreveal'
+
 
 
 
 
 export default function Cardapios(){
     const navigate  = useNavigate()
+    useEffect(() => {
+        const sr = ScrollReveal();
+    
+        sr.reveal('.bg', {
+            duration: 1000,
+            distance: '20px',
+            origin: 'top',
+          
+        });
+      }, []);
 
     return(
         <section className={styles.segundoSectionPrinci}>
             <section className = {styles.segundoSection}>
                 <section className={styles.cardapioPrincpipalContainer}>
-                    <h1 className={styles.maisPedidos}> mais pedidos</h1>
+                    <h1 className={styles.maisPedidos}> mais <span style={{color: "#FD7E05"}}>pedidos</span></h1>
                     <section className={styles.cardapioContainer}>
-                        <div className={styles.boxCardapio}>
+                        <div className={`bg ${styles.boxCardapio}`}>
                             <div className={styles.imageCardapio}>
                                 <img src={bguerOne} alt="" />
                             </div>
@@ -34,7 +46,7 @@ export default function Cardapios(){
                             
                         </div>
 
-                        <div className={styles.boxCardapio}>
+                        <div className={`bg ${styles.boxCardapio}`}>
                             <div className={styles.imageCardapio}>
                                 <img src={bguerThree} alt="" />
                             </div>
@@ -50,7 +62,7 @@ export default function Cardapios(){
                             <FavoriteIcon className={styles.iconPedidos}/>
                         </div>
 
-                        <div className={styles.boxCardapio}>
+                        <div className={`bg ${styles.boxCardapio}`}>
                             <div className={styles.imageCardapio}>
                                 <img src={bguerFo} alt="" />
                             </div>

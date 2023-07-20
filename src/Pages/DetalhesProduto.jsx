@@ -126,10 +126,7 @@ const style = {
     await setLocalizacao ("")
     
   }
-  const modalISopen = () =>{
-    
-    console.log("modal open")
-  }
+
 
   const enviarParaTodoLado = (e) => {
     e.preventDefault();
@@ -265,7 +262,7 @@ const style = {
                     </Box>
                   </Modal>
                 </div>
-              <Button variant="solid" color="error" sx={{mt: 1,color: "#FD7E05",}} style={{border:"solid 1px #FD7E05"}} onClick={handleOpen}>
+              <Button variant="solid" color="error" sx={{mt: 1,color: "#FD7E05",}} style={{border:"solid 1px #FD7E05"}} onClick={enviarParaTodoLado}>
                 <span className={styles.deletar}>
 
               enviar pedido
@@ -278,46 +275,6 @@ const style = {
     </div>
   );
   
-/*
-  return (
-    onClick={enviarParaTodoLado}
-    <div>
-      <h1>Detalhes do Produto</h1>
-      <p>Nome: {produtoNome}</p>
-      <div className={styles.imagem}>
-        <img src={produto.postImage} alt="" style={{width:"15rem", maxWidth:"100%"}}/>
-      </div>
-      <input type="number" name="" id="" 
-        onChange={(event) => setQuantidade(event.target.value)}
-        value={quantidade}
-      />
-      <br />
-      <label>cliente nome</label>
-      <input type="text" 
-        onChange={(event) => setClienteNome(event.target.value)}
-        value={clienteNome}
-      />
-
-            <form ref={form} >
-            <textarea name="message" value={"acabaste de receber um pedido"}/>
-            </form>
-
-            <p>{valorPagar}</p>
-            <button>enviar</button> <br />
-            <input 
-            type="checkbox" 
-            checked = {entrega}
-            onClick={paraEntrega}
-            name="" id="" 
-            /> <br />
-            {entrega ? (<>{produto.nomeDoProduto}</>) : null}
-
-          
-
-    </div>
-  );
-
-*/
 }
 
 

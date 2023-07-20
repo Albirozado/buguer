@@ -9,6 +9,8 @@ import Skeleton from '@mui/material/Skeleton';
 import Stack from '@mui/material/Stack';
 import Button from '@mui/material/Button';
 import { useNavigate } from 'react-router-dom';
+import ScrollReveal from 'scrollreveal'
+
 
   
 
@@ -38,6 +40,17 @@ import { useNavigate } from 'react-router-dom';
             setIsLoading(false);
           }
         }, [mostrarUsuario]);
+
+        useEffect(() => {
+          const sr = ScrollReveal();
+      
+          sr.reveal('.bgP', {
+            duration: 1000,
+            distance: '20px',
+            origin: 'top',
+            
+          });
+        }, []);
       
 
       
@@ -68,7 +81,7 @@ import { useNavigate } from 'react-router-dom';
 
       }}
       key={post.id}
-      className={styles.contente}
+      className={`bgP ${styles.contente}`}
     >
       <Grid container spacing={2} justify="center"  alignItems="center" columns={{ xs: 1, sm: 12, md: 12 }}>
         <Grid item md={5} container maxWidth="100%" direction="column">

@@ -34,7 +34,7 @@ const theme = createTheme({
 const ColocarProduto = ({ produtoNome, setProdutoNome, sendProduto, uploadPostImage, setPostImage, postImage, process, setProgress, produtoPrece, setProdutoPreco,produtoDescri, setProdutoDescri }) => {
 
   return (
-    <div>
+    <div style={{paddingTop: "4rem"}}>
 
       {process === 0 || process === 100 ? (
         <></>

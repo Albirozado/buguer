@@ -30,7 +30,7 @@ export default function MostrarProduto() {
   }, [allStatus]);
 
   return (
-    <div>
+    <div style={{paddingTop: "4rem"}}>
       {isLoading ? (
         <div className={styles.StackPro}  style={{padding: "1rem 3%" }}>
           <Stack spacing={1} sx={{ maxWidth: "100%"}}>

@@ -16,11 +16,10 @@ export default function MostrarPedido(){
 
       return (
         <div>
-          <h1>Olá, mostra</h1>
           {pedidoLoading ? (
-            <div className="loader">
-              <h1>Carregando...</h1>
-            </div>
+              <div className="loaderContent">
+                <div className="loader"></div>
+              </div>
           ) : (
             allPedidos.map((pede) => (
               <table key={pede.id}>
@@ -29,26 +28,34 @@ export default function MostrarPedido(){
                 <td>{pede.id}</td>
               </tr>
               <tr>
+                <td>Nome do Cliente</td>
+                <td>{pede.nomeDoCliente}</td>
+              </tr>
+              <tr>
                 <td>Vai Querer</td>
                 <td>{pede.nomePedido}</td>
               </tr>
               <tr>
-                <td>Nome do Cliente</td>
-                <td>{pede.nomeDoCliente}</td>
+                <td>Quantidade</td>
+                <td>{pede.pedidoQuantidade}</td>
+              </tr>
+                <tr>
+                <td>Preço Total</td>
+                <td>{pede.valoraApagar}</td>
+              </tr>
+              <tr>
+                <td>Telefone</td>
+                <td>{pede.clienteTelefone}</td>
+              </tr>
+              <tr>
+                <td>Forma de Pedido</td>
+                <td>{pede.formaDePedido}</td>
+              </tr>
+              <tr>
+                <td>Hora do Pedido</td>
+                <td>{pede.timestamp}</td>
               </tr>
 
-                <tr>
-                <td>preco</td>
-                <td>15</td>
-              </tr>
-              <tr>
-                <td>preco</td>
-                <td>15</td>
-              </tr>
-              <tr>
-                <td>preco</td>
-                <td>15</td>
-              </tr>
 
               <button onClick={() => deletePedido(pede.id)}>Delete</button>
 

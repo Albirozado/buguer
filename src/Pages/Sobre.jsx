@@ -17,7 +17,7 @@ export default function HomeFoGood(){
     
         sr.reveal('#elemento', {
           duration: 1000,
-          distance: '80px',
+          distance: '20px',
           origin: 'top',
           
         });

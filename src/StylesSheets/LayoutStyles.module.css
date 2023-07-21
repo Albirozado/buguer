@@ -252,6 +252,14 @@ textarea:focus {
 .VerTudo:hover{
     color: #fff;
 }
+.maisMenus{
+    height: 1.5rem;
+    border: 1px #ccc solid;
+    border-radius: .2rem;
+    background-color: #CCC;
+    cursor: pointer;
+
+}
 
 
 

@@ -6,6 +6,7 @@ import imagemGirl from "../utilizaveis/woman-g.png"
 import ScrollReveal from 'scrollreveal'
 import { useNavigate } from 'react-router-dom';
 import Cardapios from './Cadapios';
+import { color } from 'framer-motion';
 
 
 
@@ -77,8 +78,13 @@ export default function HomeFoGood(){
                 
                 </section>
             </section>
+
             <Cardapios/>
+            <footer >
+                <div style={{textAlign: "center", color: "#ccc"}}><span style={{color: "#FD7E05"}}>Desenvolvedor:</span> albirozadosimione@gmail.com</div>
+            </footer>
             </section>
+            
 
 
     )

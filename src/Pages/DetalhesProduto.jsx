@@ -15,18 +15,19 @@ import { Link } from 'react-router-dom';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
 import Modal from '@mui/material/Modal';
-
- 
+import AddOutlinedIcon from '@mui/icons-material/AddOutlined';
+import RemoveOutlinedIcon from '@mui/icons-material/RemoveOutlined'; 
 
 const DetalhesProduto = () => {
   const [produto, setProduto] = useState(null);
-  const [quantidade, setQuantidade] = useState(0);
+  const [quantidade, setQuantidade] = useState(1);
   const [clienteNome, setClienteNome] = useState("");
   const [entrega, setEntrega] = useState(false)
   const [pedidoForma, setPedidoForma] = useState("")
   const [telefone, setTelefone] = useState("")
   const [localizacao, setLocalizacao] = useState("")
   const [open, setOpen] = React.useState(false);
+
   const handleOpen = () => {
     if(entrega == false){
       setOpen(true)
@@ -48,10 +49,14 @@ const DetalhesProduto = () => {
       });
   };
 const data = new Date()
+
 data.setHours(data.getHours() + 1)
 const horas = data.getHours().toString().padStart(2, '0')
 const min = data.getMinutes().toString().padStart(2, '0')
-
+const horasRetif = horas - 1
+const mes = data.getMonth() + 1
+const dia = data.getDate()
+const pedidoData = `${dia}/${mes}/ ${horasRetif}:${min}`
 const style = {
   position: 'absolute',
   top: '50%',
@@ -113,6 +118,7 @@ const style = {
         formaDePedido: pedidoForma,
         clienteTelefone: telefone,
         localiZacao: localizacao,
+        horaDoPedido: pedidoData,
 
 
       
@@ -124,6 +130,7 @@ const style = {
     await setTelefone("")
     await setQuantidade ("")
     await setLocalizacao ("")
+    await pedidoData("")
     
   }
 
@@ -172,8 +179,8 @@ const style = {
               </p>
               <span className={styles.precoPreview}>${produto.produtoPreco}</span>
               <div className="coolinput">
-                <label htmlFor="input" className="text">Name:</label>
-                <input type="text" placeholder="Write here..." name="input" className="input"
+                <label htmlFor="input" className="text">Nome:</label>
+                <input type="text" placeholder="escreva o seu nome" name="input" className="input"
                   onChange={(event) => setClienteNome(event.target.value)}
                   value={clienteNome}
                 
@@ -181,19 +188,24 @@ const style = {
               </div>
               <div className="coolinput">
                 <label htmlFor="input" className="text">Telefone:</label>
-                <input type="text" placeholder="Write here..." name="input" className="input"
+                <input type="text" placeholder="digite o seu telefone" name="input" className="input"
                   onChange={(event) => setTelefone(event.target.value)}
                   value={telefone}
                 
                 />
               </div>
               
-              <div className="coolinput">
-                <label htmlFor="input" className="text">Quantidade:</label>
-                <input type='number' placeholder="Write here..." name="input" className="input"
+              <div>
+                <label className="text" style={{textTransform: "uppercase", color: "#fff", fontWeight: "500", fontSize: "0.8rem"}}>Quantidade:</label>
+                <div style={{display: "flex", alignItems: "center"}}>
+                  <span className={styles.maisMenus} onClick={()=>{quantidade  == 1 ? null : setQuantidade (quantidade - 1)}}><RemoveOutlinedIcon /></span>
+                  <input type="number" style={{color: "#ccc",width: "4rem", height: "1.5rem", outline: "none", textAlign: "center", backgroundColor: "transparent", border: "1px solid #ccc", margin: "0 0.23rem", borderRadius: ".2rem"}}
                   onChange={(event) => setQuantidade(event.target.value)}
                   value={quantidade}
-                />
+                  />
+                  <span className={styles.maisMenus} onClick={()=> setQuantidade (quantidade + 1)}><AddOutlinedIcon/></span>
+                </div>
+
               </div>
 
               <p style={{color: "white", margin: "1rem 0", fontWeight: "600"}}>TOTAL A PAGAR: <span style={{color:"#FD7E05", marginLeft: "0.1rem", fontWeight: "500"}}>{valorPagar}mts</span></p>
@@ -234,7 +246,7 @@ const style = {
                 {entrega ? (
                   <div className="coolinput">
                   <label htmlFor="input" className="text">Localizaçao:</label>
-                  <input type="text" placeholder="Write here..." name="input" className="input"
+                  <input type="text" placeholder="escreva a sua localizaçao" name="input" className="input"
                   onChange={(event) => setLocalizacao(event.target.value)}
                   value={localizacao}
 
@@ -262,6 +274,7 @@ const style = {
                     </Box>
                   </Modal>
                 </div>
+
               <Button variant="solid" color="error" sx={{mt: 1,color: "#FD7E05",}} style={{border:"solid 1px #FD7E05"}} onClick={enviarParaTodoLado}>
                 <span className={styles.deletar}>
 

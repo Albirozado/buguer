@@ -22,7 +22,7 @@ export default function MostrarPedido(){
               </div>
           ) : (
             allPedidos.map((pede) => (
-              <table key={pede.id}>
+              <table key={pede.id} >
               <tr >
                 <td>id</td>
                 <td>{pede.id}</td>
@@ -52,8 +52,8 @@ export default function MostrarPedido(){
                 <td>{pede.formaDePedido}</td>
               </tr>
               <tr>
-                <td>Hora do Pedido</td>
-                <td>{pede.timestamp}</td>
+                <td>Data</td>
+                <td>{pede.horaDoPedido}</td>
               </tr>
 
 

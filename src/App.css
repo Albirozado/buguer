@@ -26,6 +26,19 @@ time, mark, audio, video {
 	border: 0;
 
 }
+html::-webkit-scrollbar{
+    width: .4rem;
+
+}
+
+html::-webkit-scrollbar-track{
+    background: transparent;
+}
+
+html::-webkit-scrollbar-thumb{
+    background: #fcb33c;
+    border-radius: 5rem;
+}
 
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
@@ -102,6 +115,9 @@ table {
 	width: 30%;
 	color: #ccc;
   }
+  table:first-child{
+	margin-top: 4rem;
+  }
   
    td {
 	padding: 8px;
@@ -170,16 +186,10 @@ table {
 	position: static;
   }
   
-  .coolinput label.text {
+  .coolinput label {
 	font-size: 0.8rem;
 	color: #fff;
 	font-weight: 500;
-	position: relative;
-	top: 0.5rem;
-	margin: 0 0 0 7px;
-	padding: 0 3px;
-	background: #282828;
-	width: fit-content;
 	text-transform: uppercase;
   }
   
@@ -190,6 +200,7 @@ table {
 	border-radius: 5px;
 	background: transparent;
 	color: #ccc;
+	margin-bottom: 0.5rem;
 
 
   }

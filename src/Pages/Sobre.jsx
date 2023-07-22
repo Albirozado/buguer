@@ -80,9 +80,6 @@ export default function HomeFoGood(){
             </section>
 
             <Cardapios/>
-            <footer >
-                <div style={{textAlign: "center", color: "#ccc"}}><span style={{color: "#FD7E05"}}>Desenvolvedor:</span> albirozadosimione@gmail.com</div>
-            </footer>
             </section>
             
 

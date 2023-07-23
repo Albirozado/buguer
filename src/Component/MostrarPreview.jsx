@@ -78,7 +78,7 @@ export default function MostrarPreview() {
                   <p className={styles.paragrafoPreview}>
                     {post.produtoDescri}
                   </p>
-                  <span className={styles.precoPreview}>{post.produtoPreco}MTN</span>
+                  <span className={styles.precoPreview}>{post.produtoPreco}MZN</span>
                     
                     
                   

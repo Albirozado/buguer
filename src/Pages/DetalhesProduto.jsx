@@ -177,7 +177,7 @@ const style = {
               <p className={styles.paragrafoPreview}>
                 {produto.produtoDescri}
               </p>
-              <span className={styles.precoPreview}>{produto.produtoPreco}MTN</span>
+              <span className={styles.precoPreview}>{produto.produtoPreco}MZN</span>
               <div className="coolinput">
                 <label htmlFor="input" className="text">Nome:</label>
                 <input type="text" placeholder="escreva o seu nome" name="input" className="input"

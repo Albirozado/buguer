@@ -37,7 +37,7 @@ export default function Cardapios(){
                             <div className={styles.textoCardapio}>
                                 <div className={styles.tituloPreco}>
                                 <h1>Cheeseburger</h1>
-                                <span>100MTN</span>
+                                <span>100MZN</span>
                                 </div>
                                 <p>Nullam convallis metus at justo iaculis, sit amet gravida velit scelerisque. Mauris vel ligula feugiat.</p>
                                 <label onClick={()=>navigate(`/cardapio`)}>pedir agora</label>
@@ -53,7 +53,7 @@ export default function Cardapios(){
                             <div className={styles.textoCardapio}>
                                 <div className={styles.tituloPreco}>
                                 <h1>Hambúrguer Clássico</h1>
-                                <span>150MTN</span>
+                                <span>150MZN</span>
                                 </div>
                                 <p>Nullam convallis metus at justo iaculis, sit amet gravida velit scelerisque. Mauris vel ligula feugiat.</p>
                                 <label onClick={()=>navigate(`/cardapio`)}>pedir agora</label>
@@ -69,7 +69,7 @@ export default function Cardapios(){
                             <div className={styles.textoCardapio}>
                                 <div className={styles.tituloPreco}>
                                 <h1>Hambúrguer Vegano</h1>
-                                <span>200MTN</span>
+                                <span>200MZN</span>
                                 </div>
                                 <p>Nullam convallis metus at justo iaculis, sit amet gravida velit scelerisque. Mauris vel ligula feugiat.</p>
                                 <label onClick={()=>navigate(`/cardapio`)}>pedir agora</label>

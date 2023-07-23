@@ -98,7 +98,7 @@ import ScrollReveal from 'scrollreveal'
               <p className={styles.paragrafoPreview}>
                 {post.produtoDescri}
               </p>
-              <span className={styles.precoPreview} >${post.produtoPreco}</span>
+              <span className={styles.precoPreview} >{post.produtoPreco}MTN</span>
                 
                 
               

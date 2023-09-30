@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react';
+import React, {useEffect, useState} from 'react';
 import styles from "../StylesSheets/HomePageStyles.module.css"
 import bguerOne from "../utilizaveis/BuguerOne.png"
 import bguerThree from "../utilizaveis/BuguerThree.png"
@@ -23,6 +23,10 @@ export default function Cardapios(){
           
         });
       }, []);
+
+      const real = () =>{
+        setAparece(aparece == true)
+      }
 
     return(
         <section className={styles.segundoSectionPrinci}>

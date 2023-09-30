@@ -27,6 +27,7 @@ const DetalhesProduto = () => {
   const [telefone, setTelefone] = useState("")
   const [localizacao, setLocalizacao] = useState("")
   const [open, setOpen] = React.useState(false);
+  
 
   const handleOpen = () => {
     if(entrega == false){
@@ -96,6 +97,8 @@ const style = {
 
     fetchProduto();
   }, [params.id]);
+
+  
   if (!produto) { 
     return(
       <div className={styles.StackPro}  style={{padding: "3rem 3%" }}>
